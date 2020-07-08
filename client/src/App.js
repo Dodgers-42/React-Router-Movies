@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom';
 import SavedList from './Movies/SavedList';
+import Movies from './Movies/Movie';
+import MovieList from './Movies/MovieList';
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
