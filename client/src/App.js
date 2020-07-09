@@ -30,10 +30,11 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
+      <Route path="/movies/:id" component={Movies} />
       <Route path="/"> 
         <MovieList movies={movieList} />
       </Route>
-      <Route path="/movies/:id" component={Movies} />
+      
       
     </div>
   );
